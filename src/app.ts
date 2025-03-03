@@ -12,7 +12,7 @@ export const app: Express = express();
 
 app.use(express.json({ limit: "16mb" }));
 app.use(cookieParser());
-app.use(express.static(path.resolve("./public")));
+// app.use(express.static(path.resolve("./public")));
 app.use(
   express.urlencoded({
     extended: true,
